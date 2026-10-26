@@ -121,3 +121,20 @@ def test_largest_event_empty_list():
 def test_format_event_line():
     result = format_event_line("Finch Law", 435.0, False, False)
     assert result == ("Finch Law: $435.00 | sign-off: no | second chef: no")
+def test_largest_event_returns_first_on_tie():
+    """Return the first client when event totals are equal."""
+    events = [
+        {
+            "client": "First Client",
+            "guest_price": 20.0,
+            "guests": 30,
+            "nonprofit": False,
+        },
+        {
+            "client": "Second Client",
+            "guest_price": 20.0,
+            "guests": 30,
+            "nonprofit": False,
+        },
+    ]
+    assert largest_event(events) == "First Client"
