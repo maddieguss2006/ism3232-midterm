@@ -7,7 +7,7 @@
 ## What This Program Does
 
 This program calculates catering event costs and generates a report for Harvest Table Catering. It applies business rules for discounts, service fees, manager sign-off, and second-chef requirements.
-
+The report summarizes eight sample events, including each event's total, the overall amount booked, the average event total, the largest event, and staffing and approval requirements.
 ## Business Rules
 
 1. Food cost is the price per guest multiplied by the number of guests.
